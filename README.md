@@ -16,7 +16,21 @@ Contributors: Jiahui Chen, Yating Liang, Xueyan Liu, Xinyao Mo
 **Description:** The Integrated Surface Database (ISD) consists of global hourly and synoptic observations compiled from numerous sources into a gzipped fixed width format. The database includes over 35,000 stations worldwide from 1990 to 2019.
 
 
+
+# **Executive Summary**
+
+
+
 # **Introduction**
+
+
+
+
+# **Method**
+
+
+
+
 
 
 Data dictionary for reference:
