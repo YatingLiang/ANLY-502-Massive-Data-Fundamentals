@@ -2,15 +2,19 @@
 
 ANLY 502 Final Project
 
--（+*) Georgetown University Data Science and Analytics -（+*） Course: ANLY 502 Massive Data Fundamentals Project - （+*）Contributors: Jiahui Chen, Yating Liang, Xueyan Liu, Xinyao Mo
+Course: ANLY 502 Massive Data Fundamentals Project 
+
+Contributors: Jiahui Chen, Yating Liang, Xueyan Liu, Xinyao Mo
+
 
 # **Dataset**
 
--（+*) **NOAA Integrated Surface Database (ISD):** https://registry.opendata.aws/noaa-isd/ 
+**NOAA Integrated Surface Database (ISD):** https://registry.opendata.aws/noaa-isd/ 
 
--（+*) **· Amazon Resource Name (ARN):** `arn:aws:s3:::noaa-global-hourly-pds` 
+**Amazon Resource Name (ARN):** `arn:aws:s3:::noaa-global-hourly-pds` 
 
--（+*) **Description:** The Integrated Surface Database (ISD) consists of global hourly and synoptic observations compiled from numerous sources into a gzipped fixed width format. The database includes over 35,000 stations worldwide from 1990 to 2019.
+**Description:** The Integrated Surface Database (ISD) consists of global hourly and synoptic observations compiled from numerous sources into a gzipped fixed width format. The database includes over 35,000 stations worldwide from 1990 to 2019.
+
 
 # **Introduction**
 
