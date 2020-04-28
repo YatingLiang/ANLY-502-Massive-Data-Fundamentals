@@ -1,8 +1,12 @@
-# ANLY-502-Massive-Data-Fundamentals
+# **ANLY-502-Massive-Data-Fundamentals**
+
 ANLY 502 Final Project
-# Dataset
-· **NOAA Integrated Surface Database (ISD)** https://registry.opendata.aws/noaa-isd/
-· **Amazon Resource Name (ARN):** arn:aws:s3:::noaa-global-hourly-pds
+
+# **Dataset**
+
+** · NOAA Integrated Surface Database (ISD)** https://registry.opendata.aws/noaa-isd/
+
+** · Amazon Resource Name (ARN):** arn:aws:s3:::noaa-global-hourly-pds
 
 
 Data dictionary for reference:
