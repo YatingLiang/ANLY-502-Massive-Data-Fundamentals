@@ -4,9 +4,9 @@ ANLY 502 Final Project
 
 # **Dataset**
 
-** · NOAA Integrated Surface Database (ISD)** https://registry.opendata.aws/noaa-isd/
+**· NOAA Integrated Surface Database (ISD)** https://registry.opendata.aws/noaa-isd/
 
-** · Amazon Resource Name (ARN):** arn:aws:s3:::noaa-global-hourly-pds
+**· Amazon Resource Name (ARN):** arn:aws:s3:::noaa-global-hourly-pds
 
 
 Data dictionary for reference:
