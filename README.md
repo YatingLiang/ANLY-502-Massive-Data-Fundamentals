@@ -83,10 +83,10 @@ The following six figures respectively are: average precipitation，average visi
 
 
 * Variables selection   
-For selecting variables for temperature prediction, we also introduced the heatmap of the correlation matrix (Figure 10). The heatmap illustrates the correlation between variables. Blue reflects the negative correlation while red reflects positive correlations. Darker colours indicate stronger correlations. According to the heatmap, we find the correlations between most the variables are weak.  Only a few of them holds a strong correlation which indicates that the low multicollinearity issue risk. Then we take look at the temperature’s correlation with other variables. By the sorted correlation coefficient, we selected wind speed, the height of the lowest layer of clouds, visibility, sea level pressure, precipitation and rainfall duration as our variables. (Figure 11 are the scatter plot of temperature with the other two variables. 
+For selecting variables for temperature prediction, we also introduced the heatmap of the correlation matrix (Figure 10). The heatmap illustrates the correlation between variables. Blue reflects the negative correlation while red reflects positive correlations. Darker colours indicate stronger correlations. According to the heatmap, we find the correlations between most the variables are weak.  Only a few of them holds a strong correlation which indicates that the low multicollinearity issue risk. Then we take look at the temperature’s correlation with other variables. By the sorted correlation coefficient, we selected wind speed, the height of the lowest layer of clouds, visibility, sea level pressure, precipitation and rainfall duration as our variables. (Figure 11 are the scatter plot of temperature with the other two variables.)
 > ![Figure.10](/image/corr_full.png)  
 > Figure 10   
-> ![Figure.11](/image/SCA-TEMP-VS-DEW.png)  ![Figure.12](/image/SCA-TEMP-VS-ELE.png)
+> ![Figure.11](/image/SCA-TEMP-VS-DEW.png)  ![Figure.12](/image/SCA-TEMP-VS-ELE.png)  
 > Figure 11      
 ----
   
