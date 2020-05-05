@@ -25,14 +25,27 @@ Code files：待补充
 
 # **1.Introduction**
 
-Our project is about weather data analysis. we used the NOAA Integrated Surface Database which contains Worldwide stations' hourly weather reports from 1900-2020. Instead of having an statistical academic goal. The main reason we choose this dataset is that it is good dataset that we have fun with data and we believe it is a good opportunity to explore the climatic and geographical knowledge by ourselves and to prove some hypothesis: such as whether the rain falls has changed over these years. 
+The project is about weather data analysis. The NOAA Integrated Surface Database is used for the analysis, which contains Worldwide stations' hourly weather reports from 1900-2020. I
+
+There are many challenges during the process. The first challenges is data cleaning since the dataset is messy, which will be further explained in the method part. 
+The second challenges is to process large-scale spatial data and convert to readable map.
+
+待补充
 
 
-......待补充
-
-The first challenges we met is data cleaning since we have a very messy datasets. 
-The second challenges is we need to process large-scale spatial data and convert to readable map.  
-。。。。。。 待补充
+ - [`Data_Cleaning.ipynb`](https://github.com/YatingLiang/ANLY-502-Massive-Data-Fundamentals/blob/master/Data_Cleaning.ipynb): This file contains the data cleaning process for year 2019 weather data.
+ 
+  - [`1950-1990stats.ipynb`](https://github.com/YatingLiang/ANLY-502-Massive-Data-Fundamentals/blob/master/1950-1990stats.ipynb): This file contains the trend and statistical analysis for 1950 to 1990 data (every five years). It measures the Average and the standard deviation of air temperature, visibility, and precipitation per hour.
+  
+  - [`AllYears_Correlation_Heatmap.ipynb`](https://github.com/YatingLiang/ANLY-502-Massive-Data-Fundamentals/blob/master/AllYears_Correlation_Heatmap.ipynb): This file contains the data cleaning process for 1900-2020 data of sampled stations and some visualizations such as correlation heatmap of all features.
+  
+  - [`EDA_Charts_Visual.ipynb`](https://github.com/YatingLiang/ANLY-502-Massive-Data-Fundamentals/blob/master/EDA_Charts_Visual.ipynb): This file contains the chart visualizations for 2019 data, such as pie charts, bar charts, line charts, and boxplot of some features.
+  
+  - [`EDA_Map_Visual.ipynb`](https://github.com/YatingLiang/ANLY-502-Massive-Data-Fundamentals/blob/master/EDA_Charts_Visual.ipynb):  This file contains the world map visualizations for 2019 data, which is also color-coded.
+  
+   - [`model_glr_pca.ipynb`](https://github.com/YatingLiang/ANLY-502-Massive-Data-Fundamentals/blob/master/model_glr_pca.ipynb): This file contains some model fitting and the results, such as the Generalized Linear Regression and Principal Component Analysis for 2019 data.
+   
+  - [`model_ridge_lasso_dt_gbt.ipynb`](https://github.com/YatingLiang/ANLY-502-Massive-Data-Fundamentals/blob/master/model_ridge_lasso_dt_gbt.ipynb): This file contains some model fitting and the results, such as the Ridge Regression, Lasso Regression, Decision Tree, and Gradient Boosting Tree for 2019 data.
 
 
 # **2.Method** 
