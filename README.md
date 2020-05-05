@@ -328,8 +328,11 @@ Simultaneously, we identify the factors which play a key role in temperature. Ob
 Data science could be applied to the climate and weather field, and thus all these findings might be critical to environmental protection.
   
 # **5.Future Work**
+From the world map analysis, we find that the stations density of the United States and Europe is significantly higher than in other places. We hope to conduct further analysis with the stations data with almost equal proportion in each region, other than focus only on the U.S and Europe.
 
+Meanwhile, with the dataset which covers nearly one hundred years, the time series analysis about this dataset may show some hidden patterns of the weather data, such as seasonality, trend. Thus，we expects to do the time series analysis on this topic.
 
+Finally, we find some interesting facts which are not consistent with the common sense, for example, elevation and temperature do not have a strong correlation. In future work, we may find some datasets about this fact, conduct specific data analysis between the two weather factors, and verify whether the fact presented in our previous research is accidental.
 
 # References
 
