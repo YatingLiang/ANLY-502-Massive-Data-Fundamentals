@@ -3,6 +3,8 @@
 
 Course: ANLY 502 Massive Data Fundamentals Project 
 
+Group Name: Avada Kedavra!
+
 Contributors: Jiahui Chen, Yating Liang, Xueyan Liu, Xinyao Mo
 
 Code files：
@@ -345,7 +347,7 @@ Data science could be applied to the climate and weather field, and thus all the
 
 # Division of Labor
 
-Yating Liang: Data Storage and Merging, Data Cleaning, EDA, Visualizations and Writeup;
+Yating Liang: Data Storage and Merging, Data Cleaning, EDA, Visualizations, and Writeup;
 
 Xueyan Liu: Sampling subsets, Data Cleaning, EDA, Visualizations, and Writeup;
 
