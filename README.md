@@ -304,11 +304,11 @@ In data explorations, we can visualize the PCs and get a better understanding of
 # **4.Conclusion** 
 Nowadays, the climate change mainly caused by human activities is threatening seriously the sustainable development of human society. By conducting data analysis on this topic, we could clearly interpret the correlation between each climate factors, knowing the year-to-year trend of some climate index, finding the geographical pattern of weather data, and modeling for temperature prediction. 
 
-According to the plots, there is an increasing trend of yearly average temperature since 1965, which is often called “global warming.” Besides, the average visibility distance shows a decreasing trend from 1950 to 1990. All these facts are sounding a cautionary note to People: you are expected to take actions immediately to protect the environment, such as footing instead of driving. 
+According to the plots, there is an increasing trend of yearly average temperature since 1965, which is often called “global warming.” Besides, the average visibility distance shows a decreasing trend from 1950 to 1990. All these facts are sounding a cautionary note to people: you are expected to take actions immediately to protect the environment, such as footing instead of driving. 
 
 Furthermore, there are some hidden facts between climate factors, which could never be known until analyzing the big dataset. The dew points, which means the temperature to which air must be cooled to become saturated with water vapor, are really important to the temperature. The temperature and elevation tend not to be correlated. The facts like those below could help climate scientists look for the new research ideas.
 
 Simultaneously, we identify the factors which play a key role in temperature. Obviously, the predications results can be beneficial to the relative policy formulation to some extent.
 
-All these findings might be critical to environmental protection, data science could be applied to the climate and weather field.
+Data science could be applied to the climate and weather field, and thus all these findings might be critical to environmental protection, 
   
