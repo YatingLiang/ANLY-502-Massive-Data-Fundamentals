@@ -85,8 +85,9 @@ Principal component analysis (PCA) is a statistical method to find a rotation su
 
 
 
-# **Outcome** 
-* Worldmap analysis  
+# **3.Results** 
+
+## 3.1 Worldmap analysis  
 The points on the world map show the locations of stations. (Figure 1: shows the elevation of each station.) Obviously, the distribution of weather stations is not uniform. In the United States and Europe, the density of stations is significantly higher than in other places. It looks like that if a country is richer, it may build more stations and conduct more academic research. We also noticed that the most stations are built at north temperate zone, the area has four distinct seasons. 
 > ![Figure.1](/image/worldmap-EVELVATION.png)  
 > Figure 1         
@@ -116,11 +117,11 @@ The following six figures respectively are: average precipitation，average visi
 > Figure 9
 ----  
 
-* Weather indicators trends   
+## 3.2 Weather indicators trends   
 待补充，。。。
 
 
-* Variables selection   
+## 3.3 Variables selection   
 For selecting variables for temperature prediction, we also introduced the heatmap of the correlation matrix (Figure 10). The heatmap illustrates the correlation between variables. Blue reflects the negative correlation while red reflects positive correlations. Darker colours indicate stronger correlations. According to the heatmap, we find the correlations between most the variables are weak.  Only a few of them holds a strong correlation which indicates that the low multicollinearity issue risk. Then we take look at the temperature’s correlation with other variables. By the sorted correlation coefficient, we selected wind speed, the height of the lowest layer of clouds, visibility, sea level pressure, precipitation and rainfall duration as our variables. (Figure 11 are the scatter plot of temperature with the other two variables.)
 > ![Figure.10](/image/corr_full.png)  
 > Figure 10   
@@ -128,9 +129,46 @@ For selecting variables for temperature prediction, we also introduced the heatm
 > Figure 11      
 ----
   
-* Prediction     
-待补充，。。。
+## 3.4 Models Results
+
+### 3.4.1 Accuracy Comparison 
+
+Computing the r-squared and RMSE of each models and results are shown below. We can see that generally, all models achieve a r-squared of about 90% and RMSE of about 3. Among all Gradient Boosting Tree has the best performance with highest  r-squared and lowest RMSE. In addition, we could find that tree models (Decision Tree and Gradient Boosting Tree) perform better than linear models (Ridge, Lasso and Generalized linear model), this means that tree models are more suitable to the dataset for this project.
+
+
+|                |R-Squared  |RMSE     |
+|----------------|------|----------|
+|Ridge Regression|0.883  |3.003   |
+|Lasso Regression |0.867  |3.146   |
+|Decision Tree |0.905  |2.996   |
+|Gradient Boosting Tree |0.927  |2.620 |
+|Generalized Linear Regression |0.891|2.987|
+
+
+### 3.4.2 Linear Models Coefficients 
+
+Three models used in this project are linear model: ridge, lasso and generalized linear model. Thus we can get coefficients of each variables of this three models. Details are shown in the table below.
+
+Both the ridge regression and generalized linear model take all of the indicators into models, but in lasso regression model, only the coefficients of ‘latitude', 'dew', 'elevation', and 'cig' are non-zero. This means that in lasso regression only four variables are used and thus is more simplified. In addition, of all three models, the coefficients of ‘dew' are always the biggest, which means that it is quite important.
+
+|Coefficient |Ridge Regression  |Lasso Regression  |Generalized Linear Regression |
+|--------|------|------|------|
+|liquid | -0.1455 |0   |-0.1109   |
+|latitude|-0.0286  | -0.0081  |-0.0219   |
+|dew| 0.8651 |0.8688   |0.9041   |
+|vis|-4.6491e-06  | 0  |6.0804e-6  |
+|longitude |0.0015  |0   |-0.0013   |
+|wind|0.1010  |0   |0.1473   |
+|elevation|0.0016  |6.6948e-4 |0.0017   |
+|cig|0.0002  |1.4483e-4   |0.0002   |
+|slp|-0.0481  |0   |-0.0382   |
+|intercept| 52.8043 | 4.4456  |41.6677   |
+
+
+### 3.4.3 PCA Results 
+
+
   
-# **Conclusion** 
+# **4.Conclusion** 
   
   
