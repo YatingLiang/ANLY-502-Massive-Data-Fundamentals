@@ -194,7 +194,31 @@ January has the highest Sea Level Pressure, and May has the lowest Sea Level Pre
 > ![Figure.8](/image/monslpline.png)  
 > Figure 3.2.1.8
 
+### 3.2.2 Yearly trend analysis for 1950-1990
 
+**Every 5 year Average Air Temperature(Celsius)**
+> ![Figure.1](/image/5090avgtemp.png)  
+> Figure 3.2.2.1
+
+**Every 5 year Standard Deviation of Air Temperature(Celsius)**
+> ![Figure.2](/image/5090stdtemp.png)  
+> Figure 3.2.2.2
+
+**Every 5 year Average Visibility Distance(Meters)**
+> ![Figure.3](/image/5090avgvis.png)  
+> Figure 3.2.2.3
+
+**Every 5 year Standard Deviation of Visibility Distance(Meters)**
+> ![Figure.4](/image/5090stdvis.png)  
+> Figure 3.2.2.4
+
+**Every 5 year Average Liquid Preciption Depth(Millimeters/hr)**
+> ![Figure.5](/image/5090avgliquid.png)  
+> Figure 3.2.2.5
+
+**Every 5 year Standard Deviation of Liquid Preciption Depth(Millimeters/hr)**
+> ![Figure.6](/image/5090stdliquid.png)  
+> Figure 3.2.2.6
 
 ## 3.3 Variables selection   
 For selecting variables for temperature prediction, we also introduced the heatmap of the correlation matrix (Figure 3.3.1). The heatmap illustrates the correlation between variables. Blue reflects the negative correlation while red reflects positive correlations. Darker colours indicate stronger correlations. According to the heatmap, we find the correlations between most the variables are weak.  Only a few of them holds a strong correlation which indicates that the low multicollinearity issue risk. Then we take look at the temperature’s correlation with other variables. By the sorted correlation coefficient, we selected wind speed, the height of the lowest layer of clouds, visibility, sea level pressure, precipitation and rainfall duration as our variables. (Figure 3.3.2 are the scatter plot of temperature with the other two variables.)
