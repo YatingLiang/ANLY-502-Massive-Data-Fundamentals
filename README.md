@@ -146,6 +146,8 @@ Computing the r-squared and RMSE of each models and results are shown below. We 
 
 
 <img width="450" height="450" src="/image/p&a_ridge.PNG"/> <img width="450" height="450" src="/image/res_ridge.PNG"/>
+<img width="450" height="450" src="/image/p&a_lasso.PNG"/> <img width="450" height="450" src="/image/res_lasso.PNG"/>
+<img width="450" height="450" src="/image/p&a_glr.PNG"/> <img width="450" height="450" src="/image/res_glr.PNG"/>
 > Figure 3.4.1
 
 
@@ -171,6 +173,15 @@ Both the ridge regression and generalized linear model take all of the indicator
 
 ### 3.4.3 PCA Results 
 
+
+
+> ![Figure.10](/image/pca_varianceexplain.PNG)  
+> Figure 3.4.3.1
+
+
+
+> ![Figure.10](/image/pca_2pcs.PNG)  
+> Figure 3.4.3.2
 
   
 # **4.Conclusion** 
