@@ -145,7 +145,7 @@ Computing the r-squared and RMSE of each models and results are shown below. We 
 |Generalized Linear Regression |0.891|2.987|
 
 
-<img width="300" height="150" src="/image/p&a_ridge.PNG"/> <img width="300" height="150" src="/image/res_ridge.PNG" alt="图片描述文字"/>
+<img width="500" height="500" src="/image/p&a_ridge.PNG"/> <img width="500" height="500" src="/image/res_ridge.PNG"/>
 > Figure 3.4.1
 
 
