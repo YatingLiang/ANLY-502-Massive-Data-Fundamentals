@@ -310,5 +310,5 @@ Furthermore, there are some hidden facts between climate factors, which could ne
 
 Simultaneously, we identify the factors which play a key role in temperature. Obviously, the predications results can be beneficial to the relative policy formulation to some extent.
 
-Data science could be applied to the climate and weather field, and thus all these findings might be critical to environmental protection, 
+Data science could be applied to the climate and weather field, and thus all these findings might be critical to environmental protection.
   
