@@ -318,7 +318,15 @@ Data science could be applied to the climate and weather field, and thus all the
 
 # References
 
-[1] https://www.ncei.noaa.gov/data/global-hourly/doc/isd-format-document.pdf
+[1] FEDERAL CLIMATE COMPLEX DATA DOCUMENTATION FOR INTEGRATED SURFACE DATA. https://www.ncei.noaa.gov/data/global-hourly/doc/isd-format-document.pdf.
+
+[2] Smith, A., N. Lott, and R. Vose, 2011. The Integrated Surface Database: Recent Developments and Partnerships. Bulletin of the American Meteorological Society. https://journals.ametsoc.org/doi/abs/10.1175/2011BAMS3015.1
+
+[3] Lott, J.N., R.S. Vose, S.A. Del Greco, T.R. Ross, S. Worley, and J.L. Comeaux, 2008. The integrated surface database: Partnerships and progress. 24th Conference on Interactive Information Processing Systems for Meteorology, Oceanography, and Hydrology (IIPS), New Orleans, LA, American Meteorological Society. https://ams.confex.com/ams/88Annual/webprogram/Paper131387.html
+
+[4] Del Greco, S.A., J.N. Lott, R. Ray, D. Dellinger, F. Smith, and P. Jones, 2007. Surface data processing and integration at NOAA's National Climatic Data Center. 23rd Conference on Interactive Information Processing Systems for Meteorology, Oceanography, and Hydrology (IIPS), San Antonio, TX, American Meteorological Society. https://ams.confex.com/ams/87ANNUAL/webprogram/Paper116367.html
+
+
 
 
 
