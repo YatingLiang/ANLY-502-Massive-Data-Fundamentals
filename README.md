@@ -144,7 +144,7 @@ Computing the r-squared and RMSE of each models and results are shown below. We 
 |Gradient Boosting Tree |0.927  |2.620 |
 |Generalized Linear Regression |0.891|2.987|
 
-> ![Figure.11](/image/p&a_ridge.PNG)![Figure.12](/image/res_ridge.PNG) 
+> ![Figure.11](/image/p&a_ridge.PNG width = "300" height = "200")![Figure.12](/image/res_ridge.PNG) 
 > Figure 3.4.1
 
 
