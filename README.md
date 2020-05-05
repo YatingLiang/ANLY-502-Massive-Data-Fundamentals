@@ -37,7 +37,7 @@ Code files：
 
 # **Executive Summary**
 
-待补充
+The science of weather forecasting attracts public attentions every single day. Since weather and the temperature could decide what people might want to wear for the day, it might also affect people's moods. If the tempperature is low tomorrow, people should be able to get prepared to wearing warmer clothes. Thus, this research project tends to build several predictive models in order to predict temperatures using other weather indicators. The models include Ridge Regression, Lasso Regression, Decision Tree, Gradient Boosting Tree, Generalized Linear Regression, and Principal Component Analysis with varying degrees of accuracy.
 
 # **1.Introduction**
 
