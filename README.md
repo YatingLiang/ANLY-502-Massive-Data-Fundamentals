@@ -136,7 +136,64 @@ The following six figures respectively are: average precipitation，average visi
 ----  
 
 ## 3.2 Weather indicators trends   
-待补充，。。。
+
+### 3.2.1 Monthly trend analysis for 2019
+
+**Distribution of stations - 5 zones **
+> ![Figure.0](/image/fivezonespiechart.png)  
+> Figure 3.2.1.0
+
+Stations(93.3% of all) are mostly within North Temperate Zone, which is between Arctic Circle and Tropic of Cancer.
+
+
+**Monthly Average Temperature(Celsius)**
+
+July has the highest average temperature and January has the lowest in 2019. The avergate air temperature is going up then down for the year which makes sense because most stations are in the North Temperate Zone.
+
+> ![Figure.1](/image/monthavgtempline.png)  
+> Figure 3.2.1.1
+
+> ![Figure.2](/image/monthtempbox.png)  
+> Figure 3.2.1.2
+
+
+**Monthly Average Liquid Precipitation(millimeters/hour)**
+
+March has the lowest Liquid Preciption and October has the highest Liquid Precipitation in 2019.
+
+> ![Figure.3](/image/monliquidbar.png)  
+> Figure 3.2.1.3
+
+
+**Monthly Average Visibility(Meters)**
+
+Febuary has the avergae lowest visibility in 2019. Boxplot shows lots of outliers.
+
+> ![Figure.4](/image/monvisline.png)  
+> Figure 3.2.1.4
+
+> ![Figure.5](/image/monvisbox.png)  
+> Figure 3.2.1.5
+
+
+**Monthly Average Wind Speed(Meters/Sec)**
+
+August has the lowest wind speed in 2019.
+
+> ![Figure.6](/image/monwindbar.png)  
+> Figure 3.2.1.6
+
+> ![Figure.7](/image/monwindbox.png)  
+> Figure 3.2.1.7
+
+
+**Monthly Average Sea Level Pressure**
+
+January has the highest Sea Level Pressure, and May has the lowest Sea Level Pressure in 2019.
+
+> ![Figure.8](/image/monslpline.png)  
+> Figure 3.2.1.8
+
 
 
 ## 3.3 Variables selection   
