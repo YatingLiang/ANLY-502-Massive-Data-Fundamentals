@@ -12,17 +12,17 @@ Code files：
 
  - [`Data_Cleaning.ipynb`](Data_Cleaning.ipynb): This file contains the data cleaning process for year 2019 weather data.
  
-  - [`1950-1990stats.ipynb`](https://github.com/YatingLiang/ANLY-502-Massive-Data-Fundamentals/blob/master/1950-1990stats.ipynb): This file contains the trend and statistical analysis for 1950 to 1990 data (every five years). It measures the Average and the standard deviation of air temperature, visibility, and precipitation per hour.
+  - [`1950-1990stats.ipynb`](1950-1990stats.ipynb): This file contains the trend and statistical analysis for 1950 to 1990 data (every five years). It measures the Average and the standard deviation of air temperature, visibility, and precipitation per hour.
   
-  - [`AllYears_Correlation_Heatmap.ipynb`](https://github.com/YatingLiang/ANLY-502-Massive-Data-Fundamentals/blob/master/AllYears_Correlation_Heatmap.ipynb): This file contains the data cleaning process for 1900-2020 data of sampled stations and some visualizations such as correlation heatmap of all features.
+  - [`AllYears_Correlation_Heatmap.ipynb`](AllYears_Correlation_Heatmap.ipynb): This file contains the data cleaning process for 1900-2020 data of sampled stations and some visualizations such as correlation heatmap of all features.
   
-  - [`EDA_Charts_Visual.ipynb`](https://github.com/YatingLiang/ANLY-502-Massive-Data-Fundamentals/blob/master/EDA_Charts_Visual.ipynb): This file contains the chart visualizations for 2019 data, such as pie charts, bar charts, line charts, and boxplot of some features.
+  - [`EDA_Charts_Visual.ipynb`](EDA_Charts_Visual.ipynb): This file contains the chart visualizations for 2019 data, such as pie charts, bar charts, line charts, and boxplot of some features.
   
-  - [`EDA_Map_Visual.ipynb`](https://github.com/YatingLiang/ANLY-502-Massive-Data-Fundamentals/blob/master/EDA_Charts_Visual.ipynb):  This file contains the world map visualizations for 2019 data, which is also color-coded.
+  - [`EDA_Map_Visual.ipynb`](EDA_Charts_Visual.ipynb):  This file contains the world map visualizations for 2019 data, which is also color-coded.
   
-   - [`model_glr_pca.ipynb`](https://github.com/YatingLiang/ANLY-502-Massive-Data-Fundamentals/blob/master/model_glr_pca.ipynb): This file contains some model fitting and the results, such as the Generalized Linear Regression and Principal Component Analysis for 2019 data.
+   - [`model_glr_pca.ipynb`](model_glr_pca.ipynb): This file contains some model fitting and the results, such as the Generalized Linear Regression and Principal Component Analysis for 2019 data.
    
-  - [`model_ridge_lasso_dt_gbt.ipynb`](https://github.com/YatingLiang/ANLY-502-Massive-Data-Fundamentals/blob/master/model_ridge_lasso_dt_gbt.ipynb): This file contains some model fitting and the results, such as the Ridge Regression, Lasso Regression, Decision Tree, and Gradient Boosting Tree for 2019 data.
+  - [`model_ridge_lasso_dt_gbt.ipynb`](model_ridge_lasso_dt_gbt.ipynb): This file contains some model fitting and the results, such as the Ridge Regression, Lasso Regression, Decision Tree, and Gradient Boosting Tree for 2019 data.
 
 
 # **Dataset**
