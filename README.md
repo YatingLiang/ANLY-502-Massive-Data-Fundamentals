@@ -38,15 +38,9 @@ The second challenges is we need to process large-scale spatial data and convert
 # **2.Method** 
 
 ## 2.1 Data Cleaning  
-Overall the data has 1TB total size from 1900 to 2020 and consists of millions of small csv files in different folders and these files have multiple formats. For this project, some samples from all year range and the whole data for 2019 were used.
-
-The original data was very dirty and the cleaning process is essential in this project. One of the challenging problems for weather research is the size of the data. The data is gathered from all the weather stations all around the world. If it was manipulated in its full size, it would take a great amount of extra time and is also a waste of computation power. The data was stored in S3 bucket as csv format, and one csv per station, which means millions of small csv files.  Also, some stations measure more weather features than the others, that being said, the column number of each csv file might be different from each other.  After investigating into the data, only the first 11 variables were kept to do the analysis.  Therefore, removing unnecessary variables or observations that have missing values and selecting some useful features is vital to continue the research in the next step.
-
-The year 2019 weather data (Total 50.4GB) was loaded by spark read-option function. Most entries in the dataset are string type containing null values for certain observations. Thus, converting them to float type and integer type is necessary. From the  [FEDERAL CLIMATE COMPLEX DATA DOCUMENTATION FOR INTEGRATED SURFACE DATA](https://www.ncei.noaa.gov/data/global-hourly/doc/isd-format-document.pdf) ,  some missing values are represented as “9999” or “99999”. Thus, they were removed to ensure the integrity of the data for modeling. Therefore,  the measures implemented in the data cleaning process were dropping useless columns to increase computation efficiency, removing null values in the data, and transform the data types to an easier handle one. 
-
-The data cleaning process starts with selecting useful variables (columns). A total of 11 most informative variables were kept in the data set.  They were `date`, `latitude`,`longitude`,  `elevation`, `dew`(dew point temperature), `vis`(visibility), `liquid`(liquid precipitation per hour), `wind`(wind speed), `cig`(ceiling height dimension), `slp` (sea level pressure) and `temp`(air temperature). And finally, the data of 2019 for each station was merged together into one big csv file to do further research on this year's weather specifically.
-  
-One way to create a subset of all the years from 1900 to 2020 to see the trend is sampling through all the stations and extract all available years' report of these stations. Even if from the same station, the reports’ formats are different. In order to obtain more completed data, the data was loop and merged from these reports by columns. Thus, using this new dataset, it is able to show the trends of various weather indicators and correlation matrix between each variable.
+Our dataset is extremely dirty. Our dataset is extremely dirty. Overall we  have 1TB total size and is consist of almost one million of small csv files in different folders and these files  has  multiple formats. So we split the data to multiple subsets.  
+。。。。。。 待补充      
+Another way we create a subset is simpling the station, and extract all available year’s report of this station. Even if from the same station, the reports’ formats are different. In order to obtain more complete data, we created a loop and merged these reports by columns. Thus by this new dataset, we are able to see the trends of various weather indicators. 
  
  
  
@@ -150,6 +144,7 @@ Computing the r-squared and RMSE of each models and results are shown below. We 
 |Gradient Boosting Tree |0.927  |2.620 |
 |Generalized Linear Regression |0.891|2.987|
 
+We can further examine the quality of models. Below shows two kinds of plot of each linear models: "Actual vs fitted value" and "Residuals vs fitted value". For the first kind, an idea model should have scatters lie close to the line y=x as many as possible. For the latter, a good linear model will usually have residuals distributed randomly around the residuals=0 line with no distinct outliers and no clear trends. The residuals should also be small for the whole range of fitted values. We can see that all of the three models meet with this condition and therefore hav good quality.
 
 <img width="450" height="450" src="/image/p&a_ridge.PNG"/> <img width="450" height="450" src="/image/res_ridge.PNG"/>
 <img width="450" height="450" src="/image/p&a_lasso.PNG"/> <img width="450" height="450" src="/image/res_lasso.PNG"/>
@@ -180,6 +175,8 @@ Both the ridge regression and generalized linear model take all of the indicator
 ### 3.4.3 PCA Results 
 
 
+We set the number of PC as three. We can see which variables have the largest effects in each PC from the table below. The features which have the highest magnitude in the first PC have the highest effect. From the table, we observe that vis has the highest effect in the first PC while in the second PC cig is the most important. 
+
 
 |   | PC1|PC2|PC3|
 |--------|------|------|------|
@@ -194,11 +191,14 @@ Both the ridge regression and generalized linear model take all of the indicator
 |slp 	|0.00007	| -0.00014	|-0.00165	|
 
 
+The variance explained by each PC is shown below. The PCs are ranked based on the variance they explain: the first PC explains the highest variance, followed by the second PC and so on. So, we see that the first PC explains most the variance (72.3157%)  and the first two PCs explains almost all the variance (99.8466%) . However,  the third PC explains only 0.1486%. In such scenarios where we have many columns and the first few PCs account for most of the variability in the original data (such as 95% of the variance), we can use the first few PCs for data explorations and for machine learning.
 
 
 > ![Figure.10](/image/pca_varianceexplain.PNG)  
 > Figure 3.4.3.1
 
+
+In data explorations, we can visualize the PCs and get a better understanding of processes using those PCs. From the figure below that using the first two PCs, it is unable to identify distinct clusters. Therefore it is not appropriate to use clustering analysis for this dataset.
 
 
 > ![Figure.10](/image/pca_2pcs.PNG)  
