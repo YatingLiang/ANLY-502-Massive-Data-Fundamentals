@@ -93,12 +93,12 @@ Principal component analysis (PCA) is a statistical method to find a rotation su
 # **3.Results** 
 
 ## 3.1 Worldmap analysis  
-The points on the world map show the locations of stations. (Figure 1: shows the elevation of each station.) Obviously, the distribution of weather stations is not uniform. In the United States and Europe, the density of stations is significantly higher than in other places. It looks like that if a country is richer, it may build more stations and conduct more academic research. We also noticed that the most stations are built at north temperate zone, the area has four distinct seasons. 
+The points on the world map show the locations of stations. (Figure 3.1.1 : shows the elevation of each station.) Obviously, the distribution of weather stations is not uniform. In the United States and Europe, the density of stations is significantly higher than in other places. It looks like that if a country is richer, it may build more stations and conduct more academic research. We also noticed that the most stations are built at north temperate zone, the area has four distinct seasons. 
 > ![Figure.1](/image/worldmap-EVELVATION.png)  
 > Figure 3.1.1         
 ----
 *Temperature*  
-We observed the temperature from two aspects: Temperature variation and average temperature. (Figure 2: shows average temperature of each station in 2019, the blue points are the 50 coldest stations,  and the red points are the hottest stations. Figure 3: shows the temperature variation of each station in 2019.) 
+We observed the temperature from two aspects: Temperature variation and average temperature. (Figure 3.1.2: shows average temperature of each station in 2019, the blue points are the 50 coldest stations,  and the red points are the hottest stations. Figure 3.1.3: shows the temperature variation of each station in 2019.) 
 > ![Figure.2](/image/worldmap-TEMP-WITH%20HIGH%20LOW%20station.png)  
 > Figure 3.1.2 
 > ![Figure.3](/image/worldmap-TEMP-VAR.png)  
@@ -127,7 +127,7 @@ The following six figures respectively are: average precipitation，average visi
 
 
 ## 3.3 Variables selection   
-For selecting variables for temperature prediction, we also introduced the heatmap of the correlation matrix (Figure 10). The heatmap illustrates the correlation between variables. Blue reflects the negative correlation while red reflects positive correlations. Darker colours indicate stronger correlations. According to the heatmap, we find the correlations between most the variables are weak.  Only a few of them holds a strong correlation which indicates that the low multicollinearity issue risk. Then we take look at the temperature’s correlation with other variables. By the sorted correlation coefficient, we selected wind speed, the height of the lowest layer of clouds, visibility, sea level pressure, precipitation and rainfall duration as our variables. (Figure 11 are the scatter plot of temperature with the other two variables.)
+For selecting variables for temperature prediction, we also introduced the heatmap of the correlation matrix (Figure 3.3.1). The heatmap illustrates the correlation between variables. Blue reflects the negative correlation while red reflects positive correlations. Darker colours indicate stronger correlations. According to the heatmap, we find the correlations between most the variables are weak.  Only a few of them holds a strong correlation which indicates that the low multicollinearity issue risk. Then we take look at the temperature’s correlation with other variables. By the sorted correlation coefficient, we selected wind speed, the height of the lowest layer of clouds, visibility, sea level pressure, precipitation and rainfall duration as our variables. (Figure 3.3.2 are the scatter plot of temperature with the other two variables.)
 > ![Figure.10](/image/corr_full.png)  
 > Figure 3.3.1   
 > ![Figure.11](/image/SCA-TEMP-VS-DEW.png)  ![Figure.12](/image/SCA-TEMP-VS-ELE.png)  
