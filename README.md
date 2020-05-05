@@ -39,7 +39,7 @@ Code files：
 
 # **1.Introduction**
 
-This project focuses on weather data analysis. The NOAA Integrated Surface Database is used for the analysis, which contains Worldwide stations' hourly weather reports from 1900-2020. Some useful visualizations, such as geographical patterns, maps, and line charts, were drawn to explore the pattern of the dataset and different machine learning models were used to do predictive analysis on certain features in the project.
+This project focuses on weather data analysis. The NOAA Integrated Surface Database is used for the analysis, which contains Worldwide stations' hourly weather reports from 1900-2020. Some useful visualizations, such as geographical patterns, maps, and line charts, were drawn to explore the pattern of the dataset and different machine learning models were used to do predictive analysis on the temperature in the project.
 
 There were many challenges during the research process. The first challenges was data cleaning, which will be further explained in the method part. The second challenges is to process large-scale spatial data and convert to readable map. This can be tricky because spatial data needed to be handled using specific spatial packages in pyspark. Finally, the modeling results came well with good performances, which would be detailed explained in the Models Results part.
 
