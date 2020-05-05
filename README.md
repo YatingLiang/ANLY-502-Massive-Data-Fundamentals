@@ -150,7 +150,7 @@ We can further examine the quality of models. Below shows two kinds of plot of e
 <img width="450" height="450" src="/image/p&a_lasso.PNG"/> <img width="450" height="450" src="/image/res_lasso.PNG"/>
 <img width="450" height="450" src="/image/p&a_glr.PNG"/> <img width="450" height="450" src="/image/res_glr.PNG"/>
 > Figure 3.4.1
-
+----
 
 ### 3.4.2 Linear Models Coefficients 
 
@@ -196,14 +196,14 @@ The variance explained by each PC is shown below. The PCs are ranked based on th
 
 > ![Figure.10](/image/pca_varianceexplain.PNG)  
 > Figure 3.4.3.1
-
+----
 
 In data explorations, we can visualize the PCs and get a better understanding of processes using those PCs. From the figure below that using the first two PCs, it is unable to identify distinct clusters. Therefore it is not appropriate to use clustering analysis for this dataset.
 
 
 > ![Figure.10](/image/pca_2pcs.PNG)  
 > Figure 3.4.3.2
-
+----
   
 # **4.Conclusion** 
   
