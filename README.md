@@ -34,21 +34,21 @@ The second challenges is we need to process large-scale spatial data and convert
 
 
 # **Method**
-1. Data Cleaning  
+* Data Cleaning  
 Our dataset is extremely dirty. Our dataset is extremely dirty. Overall we  have 1TB total size and is consist of almost one million of small csv files in different folders and these files  has  multiple formats. So we split the data to multiple subsets.  
 。。。。。。 待补充      
 Another way we create a subset is simpling the station, and extract all available year’s report of this station. Even if from the same station, the reports’ formats are different. In order to obtain more complete data, we created a loop and merged these reports by columns. Thus by this new dataset, we are able to see the trends of various weather indicators. 
  
  
  
-2. EDA  
+* Visualizations 
 One of our project goals is discovering the geographical pattern of weather data in 2019. The best way to reach the goal is visualizing the data by a world map. However, it is not realistic to handle more than ten thousands of stations' data in the common data frame. Thus we introduced the Geospark.   Geospark is a cluster computing system for processing large-scale spatial data and is used by Mobike company, supporting their Real-time locating system. It contains several modules: core(RDD), SQL/Dataframe, Vis, and Zeppelin. (Python only contain RDD, and SQL for now) In python, GeoSpark is an extension of pyspark functions. Instead of common RDD, Geospark core provides 5 special SpatialRDD: PointRDD, PolygonRDD, LineStringRDD, CircleRDD, RectangleRDD. These RDD will automatically convert data to GeoData which have 2 attributes: geometry:  shapely geometry representation (consists of latitude and longitude ) as shapely objects; and userDate : string representation of other attributes.  For visualizing the data, we also implemented the libraries: Geopandas, Matplotlib and Seaborn. The Geopandas can handle the geospatial data, and it combines the capabilities of pandas and shapely. The Matplotlib and Seaborn allow us to create multiple types of visualizations from the data frame. 
 
 
 
 
 # **Outcome** 
-1. Worldmap analysis  
+* Worldmap analysis  
 The points on the world map show the locations of stations. (Figure 1: shows the elevation of each station.) Obviously, the distribution of weather stations is not uniform. In the United States and Europe, the density of stations is significantly higher than in other places. It looks like that if a country is richer, it may build more stations and conduct more academic research. We also noticed that the most stations are built at north temperate zone, the area has four distinct seasons. 
 > ![Figure.1](/image/worldmap-EVELVATION.png)  
 > Figure 1         
@@ -62,8 +62,7 @@ We observed the temperature from two aspects: Temperature variation and average 
 ----
 According to the colour distribution, we can see the area with the higher average temperature tend to have less variation. The hottest stations are concentrated in low latitudes, the coldest stations are in high latitudes. Furthermore, we also found something surprised us. By common sense, we made a hypothesis that the annual average temperature of the station is lower while the elevation of the station is higher. However, from the graph, the distribution of elevation data and the distribution of average temperature is not similar. elevation and temperature don’t have a strong correlation.   
 
-*Other weather indicators:*   
-
+*Other weather indicators:*    
 The following six figures respectively are: average precipitation，average visibility, average wind speed, average sea level pressure, average dew and average height of the lowest layer of clouds (ceiling height dimension) of each station in 2019. These plots offer us plenty of information:  Rainfall is greater in Asia than other continents, and inland seems to have more rainfall than coastal.Sea-level pressures vary widely in different regions of the world. The lower the longitude, the lower ceiling height dimension. Some climate indicators have similar color distributions, such as precipitation and sea level pressure, dew, visibility, ceiling height dimension, and temperature. These similarities represent the distinct climatic characteristics in different regions and the correlation between temperature and other weather indicators which help us select the variables for prediction.
 > ![Figure.4](/image/worldmap-PRECIP.png)  
 > Figure 4
@@ -80,7 +79,7 @@ The following six figures respectively are: average precipitation，average visi
 ----  
 
 
-2. Variables selection   
+* Variables selection   
 For selecting variables for temperature prediction, we also introduced the heatmap of the correlation matrix (Figure 10). The heatmap illustrates the correlation between variables. Blue reflects the negative correlation while red reflects positive correlations. Darker colours indicate stronger correlations. According to the heatmap, we find the correlations between most the variables are weak.  Only a few of them holds a strong correlation which indicates that the low multicollinearity issue risk. Then we take look at the temperature’s correlation with other variables. By the sorted correlation coefficient, we selected wind speed, the height of the lowest layer of clouds, visibility, sea level pressure, precipitation and rainfall duration as our variables. 
 > ![Figure.1](/image/corr_full.png)  
 > Figure 10         
