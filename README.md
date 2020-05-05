@@ -139,7 +139,7 @@ The following six figures respectively are: average precipitation，average visi
 
 ### 3.2.1 Monthly trend analysis for 2019
 
-**Distribution of stations - 5 zones **
+**Distribution of stations - 5 zones**
 > ![Figure.0](/image/fivezonespiechart.png)  
 > Figure 3.2.1.0
 
