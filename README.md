@@ -149,6 +149,7 @@ The following six figures respectively are: average precipitation，average visi
 **Distribution of stations - 5 zones**
 > ![Figure.0](/image/fivezonespiechart.png)  
 > Figure 3.2.1.0
+----
 
 Stations(93.3% of all) are mostly within North Temperate Zone, which is between Arctic Circle and Tropic of Cancer.
 
@@ -162,6 +163,7 @@ July has the highest average temperature and January has the lowest in 2019. The
 
 > ![Figure.2](/image/monthtempbox.png)  
 > Figure 3.2.1.2
+----
 
 
 **Monthly Average Liquid Precipitation(millimeters/hour)**
@@ -170,7 +172,7 @@ March has the lowest Liquid Preciption and October has the highest Liquid Precip
 
 > ![Figure.3](/image/monliquidbar.png)  
 > Figure 3.2.1.3
-
+----
 
 **Monthly Average Visibility(Meters)**
 
@@ -192,7 +194,7 @@ August has the lowest wind speed in 2019.
 
 > ![Figure.7](/image/monwindbox.png)  
 > Figure 3.2.1.7
-
+----
 
 **Monthly Average Sea Level Pressure**
 
@@ -226,6 +228,7 @@ January has the highest Sea Level Pressure, and May has the lowest Sea Level Pre
 **Every 5 year Standard Deviation of Liquid Preciption Depth(Millimeters/hr)**
 > ![Figure.6](/image/5090stdliquid.png)  
 > Figure 3.2.2.6
+----
 
 ## 3.3 Variables selection   
 For selecting variables for temperature prediction, we also introduced the heatmap of the correlation matrix (Figure 3.3.1). The heatmap illustrates the correlation between variables. Blue reflects the negative correlation while red reflects positive correlations. Darker colours indicate stronger correlations. According to the heatmap, we find the correlations between most the variables are weak.  Only a few of them holds a strong correlation which indicates that the low multicollinearity issue risk. Then we take look at the temperature’s correlation with other variables. By the sorted correlation coefficient, we selected wind speed, the height of the lowest layer of clouds, visibility, sea level pressure, precipitation and rainfall duration as our variables. (Figure 3.3.2 are the scatter plot of temperature with the other two variables.)
@@ -342,9 +345,9 @@ Data science could be applied to the climate and weather field, and thus all the
 
 # Division of Labor
 
-Yating Liang: Sampling subset, Data Cleaning, EDA
+Yating Liang: Sampling subsets, Data Cleaning, EDA
 
-Xueyan Liu: Sampling subset, Data Cleaning, EDA
+Xueyan Liu: Sampling subsets, Data Cleaning, EDA
 
 Jiahui Chen: Ridge regression, lasso regression, decision tree and gradient boosting tree model building
 
