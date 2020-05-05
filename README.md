@@ -312,3 +312,22 @@ Simultaneously, we identify the factors which play a key role in temperature. Ob
 
 Data science could be applied to the climate and weather field, and thus all these findings might be critical to environmental protection.
   
+# **5.Future Work**
+
+
+
+# References
+
+[1] https://www.ncei.noaa.gov/data/global-hourly/doc/isd-format-document.pdf
+
+
+
+# Division of Labor
+
+Yating Liang: Data Cleaning
+
+Xueyan Liu: 
+
+Jiahui Chen: Ridge regression, lasso regression, decision tree and gradient boosting tree model building
+
+Xinyao Mo: Generlized linear model and PCA model building.
