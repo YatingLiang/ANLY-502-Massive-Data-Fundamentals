@@ -90,14 +90,14 @@ Principal component analysis (PCA) is a statistical method to find a rotation su
 ## 3.1 Worldmap analysis  
 The points on the world map show the locations of stations. (Figure 1: shows the elevation of each station.) Obviously, the distribution of weather stations is not uniform. In the United States and Europe, the density of stations is significantly higher than in other places. It looks like that if a country is richer, it may build more stations and conduct more academic research. We also noticed that the most stations are built at north temperate zone, the area has four distinct seasons. 
 > ![Figure.1](/image/worldmap-EVELVATION.png)  
-> Figure 1         
+> Figure 3.1         
 ----
 *Temperature*  
 We observed the temperature from two aspects: Temperature variation and average temperature. (Figure 2: shows average temperature of each station in 2019, the blue points are the 50 coldest stations,  and the red points are the hottest stations. Figure 3: shows the temperature variation of each station in 2019.) 
 > ![Figure.2](/image/worldmap-TEMP-WITH%20HIGH%20LOW%20station.png)  
-> Figure 2 
+> Figure 3.2 
 > ![Figure.3](/image/worldmap-TEMP-VAR.png)  
-> Figure 3 
+> Figure 3.3 
 ----
 According to the colour distribution, we can see the area with the higher average temperature tend to have less variation. The hottest stations are concentrated in low latitudes, the coldest stations are in high latitudes. Furthermore, we also found something surprised us. By common sense, we made a hypothesis that the annual average temperature of the station is lower while the elevation of the station is higher. However, from the graph, the distribution of elevation data and the distribution of average temperature is not similar. elevation and temperature don’t have a strong correlation.   
 
@@ -131,7 +131,7 @@ For selecting variables for temperature prediction, we also introduced the heatm
   
 ## 3.4 Models Results
 
-### 3.4.1 Accuracy Comparison 
+### 3.4.1 Performance Comparison 
 
 Computing the r-squared and RMSE of each models and results are shown below. We can see that generally, all models achieve a r-squared of about 90% and RMSE of about 3. Among all Gradient Boosting Tree has the best performance with highest  r-squared and lowest RMSE. In addition, we could find that tree models (Decision Tree and Gradient Boosting Tree) perform better than linear models (Ridge, Lasso and Generalized linear model), this means that tree models are more suitable to the dataset for this project.
 
@@ -143,6 +143,8 @@ Computing the r-squared and RMSE of each models and results are shown below. We 
 |Decision Tree |0.905  |2.996   |
 |Gradient Boosting Tree |0.927  |2.620 |
 |Generalized Linear Regression |0.891|2.987|
+
+> ![Figure.11](/image/p&a_ridge.PNG)
 
 
 ### 3.4.2 Linear Models Coefficients 
