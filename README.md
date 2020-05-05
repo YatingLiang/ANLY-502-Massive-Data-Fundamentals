@@ -1,6 +1,5 @@
 # **Project Information**
 
-ANLY 502 Final Project
 
 Course: ANLY 502 Massive Data Fundamentals Project 
 
