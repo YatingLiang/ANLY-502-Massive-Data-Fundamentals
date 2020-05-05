@@ -10,7 +10,7 @@ Contributors: Jiahui Chen, Yating Liang, Xueyan Liu, Xinyao Mo
 Code files：
 
 
- - [`Data_Cleaning.ipynb`](https://github.com/YatingLiang/ANLY-502-Massive-Data-Fundamentals/blob/master/Data_Cleaning.ipynb): This file contains the data cleaning process for year 2019 weather data.
+ - [`Data_Cleaning.ipynb`](Data_Cleaning.ipynb): This file contains the data cleaning process for year 2019 weather data.
  
   - [`1950-1990stats.ipynb`](https://github.com/YatingLiang/ANLY-502-Massive-Data-Fundamentals/blob/master/1950-1990stats.ipynb): This file contains the trend and statistical analysis for 1950 to 1990 data (every five years). It measures the Average and the standard deviation of air temperature, visibility, and precipitation per hour.
   
