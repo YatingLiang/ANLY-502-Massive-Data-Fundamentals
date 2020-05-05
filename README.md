@@ -345,10 +345,10 @@ Data science could be applied to the climate and weather field, and thus all the
 
 # Division of Labor
 
-Yating Liang: Sampling subsets, Data Cleaning, EDA
+Yating Liang: Data Storage and Merging, Data Cleaning, EDA, Visualizations and Writeup;
 
-Xueyan Liu: Sampling subsets, Data Cleaning, EDA
+Xueyan Liu: Sampling subsets, Data Cleaning, EDA, Visualizations, and Writeup;
 
-Jiahui Chen: Ridge regression, lasso regression, decision tree and gradient boosting tree model building
+Jiahui Chen: Ridge regression, lasso regression, decision tree and gradient boosting tree model building, and Writeup;
 
-Xinyao Mo: Generlized linear model and PCA model building.
+Xinyao Mo: Generlized linear model and PCA model building, and Writeup.
