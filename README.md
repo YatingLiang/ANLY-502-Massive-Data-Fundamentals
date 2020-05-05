@@ -175,6 +175,21 @@ Both the ridge regression and generalized linear model take all of the indicator
 
 
 
+|   | PC1|PC2|PC3|
+|--------|------|------|------|
+|liquid	| -0.00001	|0.00002	|-0.00001	|
+|latitude 	|0.00048	|0.00053	|-0.00074	|
+|dew	|-0.00034	|-0.00008	|0.00543	|
+|vis	|  0.93689	|0.34960	| 0.00391	|
+|longitude	|0.00127	|-0.00117	|0.01488	|
+|wind	| 0.00001	| 0.00005	|0.00003	|
+|elevation	| 0.00633	| -0.00575	| -0.99984	|
+|cig	| 0.34956	|-0.93688 	|0.00758	|
+|slp 	|0.00007	| -0.00014	|-0.00165	|
+
+
+
+
 > ![Figure.10](/image/pca_varianceexplain.PNG)  
 > Figure 3.4.3.1
 
