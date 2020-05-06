@@ -66,8 +66,10 @@ Subset Example:
 |72475023176|2019-01-01T03:52:00|38.41667|-113.01667|   1536.2| 4.1| 396.0| 2012.0| -8.3|-10.6|1019.3|   0.0|  1.0|    1|
 |72475023176|2019-01-01T04:52:00|38.41667|-113.01667|   1536.2| 5.7| 335.0| 1609.0| -7.8| -9.4|1019.2|   0.5|  1.0|    1|  
 
-Another way to create a subset of all the years reports to see the trend is sampling through all the stations and extract all available years' report of these stations. Even if from the same station, the reports’ formats are different. In order to obtain more completed data, the data was loop and merged from these reports by columns. Thus, using this new dataset, it is able to show the trends of various weather indicators and correlation matrix between each variable.   
-Subset Example:   
+Another way to create a subset of all the years reports to see the trend is sampling through all the stations and extract all available years' report of these stations. Even if from the same station, the reports’ formats are different. In order to obtain more completed data, the data was loop and merged from these reports by columns. Thus, using this new dataset, it is able to show the trends of various weather indicators and correlation matrix between each variable.  
+
+Subset Example: 
+
 |    STATION|               DATE|  LATITUDE| LONGITUDE|ELEVATION|WND1|WND2|WND4|WND5| CIG1|CIG2|CIG3|  VIS1|VIS2|VIS4| TMP1|TMP2| DEW1|DEW2| SLP1|SLP2|AA11|AA12|AA13|AA14|AY11|AY12|AY13|AY14|GF11|GF12|GF13|GF14|GF15|GF16|GF17| GF18|GF19|GF110|GF111|GF112|GF113|MD11|MD12|MD13|MD14|MD15|MW11|MW12|GA11|GA12|GA13|GA14|GA15|GA16|AA21|AA22|AA23|AA24| MA11|MA12| MA13|MA14|AY21|AY22|AY23|AY24| OA1| UG2| WA1|AW11|OC1|AW12|KA11|KA12|KA13| AZ1|WND_ind|CIG_ind|VIS_ind|
 |    ------|               ------|  ------| ------|------|------|------|------|------| ------|------|------|  ------|------|------| ------|------| ------|------| ------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------| ------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------| ------|------| ------|------|------|------|------|------| ------| ------| ------|------|------|------|------|------|------| ------|------|------|------|
 |01001099999|2011-01-01T00:00:00|70.9333333|-8.6666667|      9.0| 340|   1|0110|   1|01200|   1|   9|005000|   1|   1|-0056|   1|-0098|null|10264|   1|  06|9999|   9|   9|   8|   1|  06|   1|  08|  99|   1|  08|   1|  08|   1|00800|   1|   99|    9|   99|    9|   2|   1| 017|   1|+999|  85|   1|null|null|null|null|null|null|null|null|null|null|99999|   9|10252|   1|   3|   1|  06|   1|null|null|null|   0|  0|null|null|null|null|null|    0.0|    0.0|    0.0|
@@ -122,17 +124,23 @@ The points on the world map show the locations of stations. (Figure 3.1.1 : show
 > ![Figure.1](/image/worldmap-EVELVATION.png)  
 > Figure 3.1.1         
 ----
-*Temperature*  
+
+**Temperature**
+
 We observed the temperature from two aspects: Temperature variation and average temperature. (Figure 3.1.2: shows average temperature of each station in 2019, the blue points are the 50 coldest stations,  and the red points are the hottest stations. Figure 3.1.3: shows the temperature variation of each station in 2019.) 
+
 > ![Figure.2](/image/worldmap-TEMP-WITH%20HIGH%20LOW%20station.png)  
 > Figure 3.1.2 
 > ![Figure.3](/image/worldmap-TEMP-VAR.png)  
 > Figure 3.1.3 
 ----
+
 According to the colour distribution, we can see the area with the higher average temperature tend to have less variation. The hottest stations are concentrated in low latitudes, the coldest stations are in high latitudes. Furthermore, we also found something surprised us. By common sense, we made a hypothesis that the annual average temperature of the station is lower while the elevation of the station is higher. However, from the graph, the distribution of elevation data and the distribution of average temperature is not similar. elevation and temperature don’t have a strong correlation.   
 
-*Other weather indicators:*    
+**Other weather indicators:**
+
 The following six figures respectively are: average precipitation，average visibility, average wind speed, average sea level pressure, average dew and average height of the lowest layer of clouds (ceiling height dimension) of each station in 2019. These plots offer us plenty of information, for instance:  Rainfall is greater in Asia than other continents, and inland seems to have more rainfall than coastal; sea-level pressures vary widely in different regions of the world; the lower the longitude, the lower ceiling height dimension. Some climate indicators have similar color distributions, such as precipitation and sea level pressure; dew, and visibility; ceiling height dimension and temperature. These similarities represent the distinct climatic characteristics in different regions and the correlation between temperature and other weather indicators which help us select the variables for prediction.
+
 > ![Figure.4](/image/worldmap-PRECIP.png)  
 > Figure 3.1.4
 > ![Figure.5](/image/worldmap-VIS.png)  
@@ -237,6 +245,7 @@ January has the highest Sea Level Pressure, and May has the lowest Sea Level Pre
 
 ## 3.3 Variables selection   
 For selecting variables for temperature prediction, we also introduced the heatmap of the correlation matrix (Figure 3.3.1). The heatmap illustrates the correlation between variables. Blue reflects the negative correlation while red reflects positive correlations. Darker colours indicate stronger correlations. According to the heatmap, we find the correlations between most the variables are weak.  Only a few of them holds a strong correlation which indicates that the low multicollinearity issue risk. Then we take look at the temperature’s correlation with other variables. By the sorted correlation coefficient, we selected wind speed, the height of the lowest layer of clouds, visibility, sea level pressure, precipitation and rainfall duration as our variables. (Figure 3.3.2 are the scatter plot of temperature with the other two variables.)
+
 > ![Figure.10](/image/corr_full.png)  
 > Figure 3.3.1   
 > ![Figure.11](/image/SCA-TEMP-VS-DEW.png)  ![Figure.12](/image/SCA-TEMP-VS-ELE.png)  
