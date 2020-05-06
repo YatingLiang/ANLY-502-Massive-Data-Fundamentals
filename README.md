@@ -196,7 +196,7 @@ August has the lowest wind speed in 2019.
 
 > ![Figure.7](/image/monwindbox.png)  
 > Figure 3.2.1.7
-----
+
 
 **Monthly Average Sea Level Pressure**
 
@@ -345,7 +345,6 @@ Finally, we find some interesting facts which are not consistent with common sen
 
 [4] Del Greco, S.A., J.N. Lott, R. Ray, D. Dellinger, F. Smith, and P. Jones, 2007. Surface data processing and integration at NOAA's National Climatic Data Center. 23rd Conference on Interactive Information Processing Systems for Meteorology, Oceanography, and Hydrology (IIPS), San Antonio, TX, American Meteorological Society. https://ams.confex.com/ams/87ANNUAL/webprogram/Paper116367.html
 
-
 [5] Turner, P. 2020, February 10. Time Series Analysis and Climate Change. https://towardsdatascience.com/time-series-analysis-and-climate-change-7bb4371021e
 
 
@@ -353,7 +352,7 @@ Finally, we find some interesting facts which are not consistent with common sen
 
 Yating Liang: Data Storage and Merging, Data Cleaning, EDA, Visualizations, and Writeup;
 
-Xueyan Liu: Sampling subsets, Data Cleaning, EDA, Visualizations, and Writeup;
+Xueyan Liu: Sampling subsets, Data Cleaning, EDA, Visualizations, Correlation heatmap building, Presentation and Writeup;
 
 Jiahui Chen: Ridge regression, lasso regression, decision tree and gradient boosting tree model building, and Writeup;
 
