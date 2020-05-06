@@ -58,7 +58,9 @@ The original data was very dirty and the cleaning process is essential in this p
 The year 2019 weather data (Total 50.4GB) was loaded by spark read-option function. Most entries in the dataset are string type containing null values for certain observations. Thus, converting them to float type and integer type is necessary. From the  [FEDERAL CLIMATE COMPLEX DATA DOCUMENTATION FOR INTEGRATED SURFACE DATA](https://www.ncei.noaa.gov/data/global-hourly/doc/isd-format-document.pdf) ,  some missing values are represented as “9999” or “99999”. Thus, they were removed to ensure the integrity of the data for modeling. Therefore,  the measures implemented in the data cleaning process were dropping useless columns to increase computation efficiency, removing null values in the data, and transform the data types to an easier handle one. 
 
 The data cleaning process starts with selecting useful variables (columns). A total of 11 most informative variables were kept in the data set.  They were `date`, `latitude`,`longitude`,  `elevation`, `dew`(dew point temperature), `vis`(visibility), `liquid`(liquid precipitation per hour), `wind`(wind speed), `cig`(ceiling height dimension), `slp` (sea level pressure) and `temp`(air temperature). And finally, the data of 2019 for each station was merged together into one big csv file to do further research on this year's weather specifically.  
-Subset Example:   
+
+Subset Example: 
+
 |    station|               date|latitude| longitude|elevation|wind|   cig|    vis| temp|  dew|   slp|liquid|liqhr|month|
 |    ------|               ------|------| ------|------|------|   ------|    ------| ------|  ------|   ------|------|------|------|
 |72475023176|2019-01-01T03:52:00|38.41667|-113.01667|   1536.2| 4.1| 396.0| 2012.0| -8.3|-10.6|1019.3|   0.0|  1.0|    1|
@@ -71,7 +73,8 @@ Subset Example:
 |01001099999|2011-01-01T00:00:00|70.9333333|-8.6666667|      9.0| 340|   1|0110|   1|01200|   1|   9|005000|   1|   1|-0056|   1|-0098|null|10264|   1|  06|9999|   9|   9|   8|   1|  06|   1|  08|  99|   1|  08|   1|  08|   1|00800|   1|   99|    9|   99|    9|   2|   1| 017|   1|+999|  85|   1|null|null|null|null|null|null|null|null|null|null|99999|   9|10252|   1|   3|   1|  06|   1|null|null|null|   0|  0|null|null|null|null|null|    0.0|    0.0|    0.0|
 |01001099999|2011-01-01T01:00:00|70.9333333|-8.6666667|      9.0| 330|   1|0100|   1|99999|   9|   9|999999|   9|   1|-0054|   9|-0095|null|10268|   1|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null| null|null| null| null| null| null|   2|   1| 016|   1|+999|null|null|null|null|null|null|null|null|null|null|null|null|99999|   9|10256|   1|null|null|null|null|null|null|null|   0|  0|null|null|null|null|null|    0.0|    0.0|    0.0|
  
-## 2.2 Visualizations    
+## 2.2 Visualizations  
+
 One of our project goals is discovering the geographical pattern of weather data in 2019. The best way to reach the goal is visualizing the data by a world map. However, it is not realistic to handle more than ten thousands of stations' data in the common data frame. Thus we introduced the Geospark.   Geospark is a cluster computing system for processing large-scale spatial data and is used by Mobike company, supporting their Real-time locating system. It contains several modules: core(RDD), SQL/Dataframe, Vis, and Zeppelin. (Python only contain RDD, and SQL for now) In python, GeoSpark is an extension of pyspark functions. Instead of common RDD, Geospark core provides 5 special SpatialRDD: PointRDD, PolygonRDD, LineStringRDD, CircleRDD, RectangleRDD. These RDD will automatically convert data to GeoData which have 2 attributes: geometry:  shapely geometry representation (consists of latitude and longitude ) as shapely objects; and userDate : string representation of other attributes.  For visualizing the data, we also implemented the libraries: Geopandas, Matplotlib and Seaborn. The Geopandas can handle the geospatial data, and it combines the capabilities of pandas and shapely. The Matplotlib and Seaborn allow us to create multiple types of visualizations from the data frame. 
 
 
