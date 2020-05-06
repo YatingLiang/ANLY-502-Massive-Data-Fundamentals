@@ -328,11 +328,12 @@ Simultaneously, we identify the factors which play a key role in temperature. Ob
 Data science could be applied to the climate and weather field, and thus all these findings might be critical to environmental protection.
   
 # **5.Future Work**
-From the world map analysis, we find that the stations density of the United States and Europe is significantly higher than in other places. We hope to conduct further analysis with the stations data with almost equal proportion in each region, other than focus only on the U.S and Europe.
 
-Meanwhile, with the dataset which covers nearly one hundred years, the time series analysis about this dataset may show some hidden patterns of the weather data, such as seasonality, trend. Thus，we expects to do the time series analysis on this topic.
+From the world map analysis, we find that the stations' density of the United States and Europe is significantly higher than in other places. This imbalanced distribution might somehow contort the prediction result.  Thus we may conduct further analysis with the evenly proportional sampled stations by regions rather than letting the stations set in the U.S and Europe dominate the analysis.
 
-Finally, we find some interesting facts which are not consistent with the common sense, for example, elevation and temperature do not have a strong correlation. In future work, we may find some datasets about this fact, conduct specific data analysis between the two weather factors, and verify whether the fact presented in our previous research is accidental.
+Meanwhile, although our features selection and prediction are relatively successful, we ignore one factor: period. What we predict is the average temperature of a specific period for each station. In fact, the temperature not only impacted by the values of other weather indicators but also impacted by the lagged values of temperature and other variables. The seasonality, trend, and even the white noise of data may play an important role in temperature values. Thus, we expect to introduce the time series forecast model for real-time temperature prediction in the future. 
+
+Finally, we find some interesting facts which are not consistent with common sense; for example, elevation and temperature do not have a strong correlation. In future work, we may find some datasets about this fact, conduct specific data analysis between the two weather factors, and verify whether the fact presented in our previous research is accidental.
 
 # References
 
@@ -345,7 +346,7 @@ Finally, we find some interesting facts which are not consistent with the common
 [4] Del Greco, S.A., J.N. Lott, R. Ray, D. Dellinger, F. Smith, and P. Jones, 2007. Surface data processing and integration at NOAA's National Climatic Data Center. 23rd Conference on Interactive Information Processing Systems for Meteorology, Oceanography, and Hydrology (IIPS), San Antonio, TX, American Meteorological Society. https://ams.confex.com/ams/87ANNUAL/webprogram/Paper116367.html
 
 
-
+[5] Turner, P. 2020, February 10. Time Series Analysis and Climate Change. https://towardsdatascience.com/time-series-analysis-and-climate-change-7bb4371021e
 
 
 # Division of Labor
