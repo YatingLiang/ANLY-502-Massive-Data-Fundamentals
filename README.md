@@ -31,7 +31,7 @@ Code files：
 
 **Amazon Resource Name (ARN):** `arn:aws:s3:::noaa-global-hourly-pds` 
 
-**Description:** The Integrated Surface Database (ISD) consists of global hourly and synoptic observations compiled from numerous sources into a gzipped fixed width format. The database includes over 35,000 stations worldwide from 1900 to 2020.（Total size:1.1 TB)
+**Description:** The Integrated Surface Database (ISD) consists of global hourly and synoptic observations compiled from numerous sources into a gzipped fixed width format. The database includes over 35,000 stations worldwide from 1900 to 2020. ISD includes numerous parameters such as wind speed and direction, wind gust, temperature, dew point, cloud data, sea level pressure, altimeter setting, station pressure, present weather, visibility, precipitation amounts for various time periods, snow depth, and various other elements as observed by each station.（Total size:1.1 TB)
 
 
 
