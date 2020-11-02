@@ -360,12 +360,4 @@ Finally, we find some interesting facts which are not consistent with common sen
 [5] Turner, P. 2020, February 10. Time Series Analysis and Climate Change. https://towardsdatascience.com/time-series-analysis-and-climate-change-7bb4371021e
 
 
-# Division of Labor
 
-Yating Liang: Data Storage and Merging, Data Cleaning, EDA, Visualizations, and Writeup;
-
-Xueyan Liu: Sampling subsets, Data Cleaning, EDA, Visualizations, Correlation heatmap building, Presentation and Writeup;
-
-Jiahui Chen: Ridge regression, lasso regression, decision tree and gradient boosting tree model building, and Writeup;
-
-Xinyao Mo: Generlized linear model and PCA model building, and Writeup.
